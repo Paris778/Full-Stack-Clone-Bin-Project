@@ -1,0 +1,136 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(21, 39, 79);
+    color: blanchedalmond;
+    display: flex;
+}
+
+.wrapper {
+    display: flex;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+}
+
+pre {
+    margin: 0;
+}
+
+#code-display {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgb(43, 54, 69);
+}
+
+.line-numbers {
+    background-color: rgb(21, 24, 30);
+    color: rgb(111, 113, 120);
+    font-family: monospace;
+    text-align: end;
+    padding-left: 10px;
+    padding-right: 8px;
+}
+
+textarea {
+    background-color: transparent;
+    resize: none;
+    width: calc(100vw - 5vw);
+    padding: 0%;
+    margin-left: 1rem;
+    color: rgb(215, 217, 224);
+    min-height: calc(100vh - 3.5rem);
+    border: none;
+    outline: none;
+}
+
+.button-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: .15;
+    width: 20%;
+    transition: opacity 200ms ease-in-out;
+    background-color: rgb(53, 73, 117);
+    padding: 1rem;
+}
+
+.button-wrapper:hover {
+    opacity: 1;
+}
+
+.logo {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: inline-block;
+}
+
+.buttons {
+    display: flex;
+    margin-top: .5rem;
+    justify-content: center;
+}
+
+.buttons>*+* {
+    margin-left: .25rem;
+}
+
+.btn {
+    cursor: pointer;
+    background: none;
+    border: 1px solid rgb(21, 39, 79);
+    color: rgb(21, 39, 79);
+    border-radius: .25rem;
+    padding: .25rem .5rem;
+    transition: background-color 200ms ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(99, 127, 187);
+    color: white;
+}
+
+
+/*  TOP BAR */
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: 77.5vw;
+    padding-left: 1rem;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Add a color to the active/current link */
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}

@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    function copyToClipboard(text) {
+        var inputc = document.body.appendChild(document.createElement("input"));
+        inputc.value = window.location.href;
+        inputc.focus();
+        inputc.select();
+        document.execCommand('copy');
+        inputc.parentNode.removeChild(inputc);
+        alert("URL Copied.");
+    }
+</script>
+
+
+<div class="button-wrapper">
+    <a href="/" class="logo">CloneBin</a>
+    <div class="buttons">
+        <a href="/new" class="btn">New</a>
+        <% if(locals.canSave) { %>
+            <button class="btn" type="submit">Save</button>
+            <% } %>
+
+                <% if(locals.id != null) { %>
+                    <a href="/<%= locals.id %>/duplicate " class="btn">Duplicate</a>
+                    <a class="btn" onclick="copyToClipboard()">Copy URL</a>
+                    <% } %>
+    </div>
+</div>
